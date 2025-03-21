@@ -31,8 +31,10 @@ from app.schema import (
 from app.bedrock import BedrockClient
 
 
-REASONING_MODELS = ["o1", "o3-mini"]
+REASONING_MODELS = ["o1", "o3-mini","moonshot-v1-8k", "moonshot-v1-32k"]
 MULTIMODAL_MODELS = [
+    "moonshot-v1-8k",
+    "moonshot-v1-32k",
     "gpt-4-vision-preview",
     "gpt-4o",
     "gpt-4o-mini",

@@ -73,7 +73,7 @@ class WebSearch(BaseTool):
         Returns:
             List[str]: Ordered list of search engine names.
         """
-        preferred = "google"
+        preferred = "baidu"
         if config.search_config and config.search_config.engine:
             preferred = config.search_config.engine.lower()
 

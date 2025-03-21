@@ -37,7 +37,7 @@ class PlanningAgent(ToolCallAgent):
     step_execution_tracker: Dict[str, Dict] = Field(default_factory=dict)
     current_step_index: Optional[int] = None
 
-    max_steps: int = 20
+    max_steps: int = 5
 
     @model_validator(mode="after")
     def initialize_plan_and_verify_tools(self) -> "PlanningAgent":
